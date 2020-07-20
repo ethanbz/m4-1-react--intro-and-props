@@ -8,3 +8,11 @@ body {
 *:after {
   box-sizing: border-box;
 }
+
+.superwrapper {
+  display:flex;
+}
+
+.superwrapper > * {
+  flex: 1;
+}

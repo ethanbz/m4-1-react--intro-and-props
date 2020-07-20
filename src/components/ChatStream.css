@@ -9,4 +9,46 @@
 */
 .chat-stream {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.sent, .received {
+  margin-bottom: 20px;
+}
+
+.pic {
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: -8px;
+}
+
+.msgbody > span {
+  background-color: rgb(231, 231, 231);
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.username {
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.sent {
+  align-self: flex-end;
+}
+
+.sent > .username {
+  display: none;
+}
+
+.sent > .msgbody > .pic {
+  visibility: hidden;
+}
+
+.sent > .msgbody > span {
+  background-color: rgb(108, 167, 255);
+  color: white;
 }
